@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portafolio de Aarón Reza Ramírez · Software & Logistics Automation Engineer" />
+  <title>Aarón Reza · Industrial Digital Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="page-grid"></div>
+  <header class="topbar container">
+    <a class="brand" href="#inicio">
+      <span class="brand-text brand-text-full"><strong>Aarón Reza Ramírez</strong><small>Software & Logistics Automation Engineer</small></span>
+    </a>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="topbar-actions">
+      <a class="btn btn-outline" href="Aaron_Reza_Ramirez_CV.pdf" download>Descargar CV ↓</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/522217599518" target="_blank" rel="noopener" aria-label="Enviar mensaje por WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true">
+          <path fill="currentColor" d="M19.11 17.62c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27s.98 2.63 1.11 2.81c.14.18 1.92 2.93 4.66 4.11.65.28 1.16.45 1.55.58.65.21 1.25.18 1.72.11.52-.08 1.6-.65 1.83-1.29.23-.63.23-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/>
+          <path fill="currentColor" d="M16.05 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.46 1.71 6.4L3.14 29l6.77-1.78A12.72 12.72 0 0 0 16.05 28.8c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.8-12.8-12.8zm0 23.44a10.6 10.6 0 0 1-5.41-1.48l-.39-.23-4.02 1.06 1.07-3.92-.25-.4a10.58 10.58 0 0 1-1.63-5.67c0-5.86 4.77-10.63 10.63-10.63S26.68 10.14 26.68 16 21.91 26.64 16.05 26.64z"/>
+        </svg>
+        Enviar mensaje
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero hero-minimal container section-card">
+      <div class="hero-center">
+        <div class="eyebrow center">AUTOMATIZACIÓN · SOFTWARE · LOGÍSTICA</div>
+        <h1>Automatización,<br>software y <span>logística.</span></h1>
+        <p>Soluciones digitales para planta, datos y operación.</p>
+        <div class="hero-actions center">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos →</a>
+          <a class="btn btn-outline" href="#contacto">Contacto</a>
+        </div>
+      </div>
+
+      <div class="hero-projects-strip">
+        <article class="hero-project-card">
+          <div class="hero-project-thumb"><img src="assets/screenshots/tam.png" alt="TAM Center Control"></div>
+          <div class="hero-project-meta">
+            <strong>TAM</strong>
+            <span>planificación · logística</span>
+          </div>
+        </article>
+        <article class="hero-project-card">
+          <div class="hero-project-thumb"><img src="assets/screenshots/tracking.png" alt="Tracking de Llavines"></div>
+          <div class="hero-project-meta">
+            <strong>Tracking</strong>
+            <span>rastreo · visibilidad · alertas</span>
+          </div>
+        </article>
+        <article class="hero-project-card">
+          <div class="hero-project-thumb"><img src="assets/screenshots/warehouse.png" alt="Warehouse KPI Dashboard"></div>
+          <div class="hero-project-meta">
+            <strong>Warehouse KPI</strong>
+            <span>inventario · servicio · eficiencia</span>
+          </div>
+        </article>
+        <article class="hero-project-card">
+          <div class="hero-project-thumb"><img src="assets/screenshots/buffer.png" alt="Buffer App"></div>
+          <div class="hero-project-meta">
+            <strong>Buffer</strong>
+            <span>capacidad · flujo · estabilidad</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="container block-section">
+      <div class="section-heading">
+        <div><span class="kicker">PROYECTOS</span><h2>Aplicaciones reales</h2><p>Proyectos desarrollados para resolver problemas de operación, logística, trazabilidad, calidad y análisis de datos.</p></div>
+        <div id="filterRow" class="filters"></div>
+      </div>
+      <div id="projectGrid" class="projects-grid"></div>
+    </section>
+
+    <section id="detalle" class="container block-section">
+      <div class="section-heading compact">
+        <div><span class="kicker">PROYECTO DESTACADO</span><h2 id="detailTitle">TAM Center Control</h2><p id="detailDescription"></p></div>
+        <div class="detail-actions"></div>
+      </div>
+      <div class="detail-card">
+        <div class="detail-media">
+          <img id="detailImage" src="assets/screenshots/tam.png" alt="Proyecto destacado">
+          <div class="media-caption"><span id="detailCategory"></span><strong id="detailMediaTitle"></strong></div>
+        </div>
+        <div class="detail-info">
+          <div id="detailTags" class="tag-row"></div>
+          <div class="detail-stat-row">
+            <article><span>Tipo</span><strong id="detailType"></strong></article>
+            <article><span>Impacto</span><strong id="detailImpact"></strong></article>
+          </div>
+          <article class="text-panel"><h3>Problema</h3><p id="detailProblem"></p></article>
+          <article class="text-panel"><h3>Solución</h3><p id="detailSolution"></p></article>
+          <article class="text-panel"><h3>Resultados</h3><ul id="detailResults"></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container block-section spotlight">
+      <div class="spotlight-copy">
+        <span class="kicker">TRAZABILIDAD EN PLANTA</span>
+        <h2>Tracking de Llavines</h2>
+        <p>La interfaz real permite consultar registros de Clever, PKN, chips, modelo de componente, tiempo a línea y trazabilidad del ensamble.</p>
+        <div class="spotlight-tabs"><span>Buscador de tracking</span><span>Preensamble</span><span>Línea / vehículo</span><span>Histórico</span></div>
+        <div class="timeline">
+          <div><b>Preensamble</b><small>Registro de chips</small></div>
+          <div><b>Validación</b><small>Histórico local</small></div>
+          <div><b>Línea</b><small>Vinculación PKN</small></div>
+          <div><b>Resultado</b><small>Trazabilidad</small></div>
+        </div>
+      </div>
+      <div class="spotlight-media"><img src="assets/screenshots/tracking.png" alt="Tracking de Llavines real"></div>
+    </section>
+
+    <section id="experiencia" class="container block-section">
+      <div class="section-heading"><div><span class="kicker">EXPERIENCIA</span><h2>Industria + desarrollo</h2><p>Experiencia profesional en procesos logísticos y productivos, programación, automatización y mejora continua.</p></div></div>
+      <div class="experience-grid">
+        <article><span class="date">2024 — Actual</span><h3>Ingeniero de Procesos Logísticos y Productivos</h3><strong>Motherson SAS</strong><p>Desarrollo de aplicaciones web, alertas de inventario, optimización de procesos, Lean Manufacturing, poka-yokes, balanceo y proyectos de mejora.</p></article>
+        <article><span class="date">2023 — 2024</span><h3>Programador</h3><strong>JG PROINDUSA</strong><p>Programación de PLC, TIA Portal, integración de drivers, trazabilidad, EPLAN, secuencias automatizadas y sistemas de visión Keyence.</p></article>
+        <article><span class="date">2023</span><h3>Programador PLC / Automatización</h3><strong>SIATSA</strong><p>PLC Siemens, Delta y Allen-Bradley, tableros eléctricos, control analógico, neumática, sensores y automatización de mesas de calidad.</p></article>
+      </div>
+    </section>
+
+    <section id="perfil" class="container profile-section section-card">
+      <div><span class="kicker">PERFIL</span><h2>Ingeniería Mecatrónica aplicada a operaciones reales</h2><p>Mi perfil combina procesos, software y automatización. Eso me permite entender el problema físico u operativo y desarrollar la herramienta digital que lo acompaña.</p></div>
+      <div class="profile-grid">
+        <article><strong>Educación</strong><span>Ingeniería Mecatrónica · UVM · 2020–2024</span></article>
+        <article><strong>Idiomas</strong><span>Español nativo · Inglés B2</span></article>
+        <article><strong>Metodologías</strong><span>Lean Manufacturing · 8D · Kaizen · Core Tools</span></article>
+        <article><strong>Automatización</strong><span>Siemens · Allen-Bradley · Mitsubishi · Delta</span></article>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="container block-section">
+      <div class="section-heading"><div><span class="kicker">STACK</span><h2>Tecnologías</h2><p>Herramientas usadas en software, automatización, infraestructura y análisis.</p></div></div>
+      <div id="techGrid" class="tech-grid"></div>
+    </section>
+
+    <section class="container block-section qassist-section">
+      <div class="qassist-copy">
+        <span class="kicker">BOT + API</span>
+        <h2>QAssist</h2>
+        <p>Proyecto de asistente para calidad con integración de bots de Telegram, flujo conversacional, API y almacenamiento estructurado.</p>
+        <div class="tag-row"><span>Telegram Bot</span><span>Python</span><span>FastAPI</span><span>SQLite</span></div>
+      </div>
+      <div class="telegram-mockup">
+        <div class="phone-top"><span>QAssist Bot</span><small>Telegram</small></div>
+        <div class="chat-body">
+          <div class="bot-message">Selecciona el modelo:</div>
+          <div class="bot-options"><span>Jetta</span><span>Tiguan</span><span>Taos</span></div>
+          <div class="user-message">Jetta</div>
+          <div class="bot-message">Ingresa el PKN (10 dígitos):</div>
+          <div class="user-message">2640385044</div>
+          <div class="bot-message success">✅ Reclamo registrado con éxito.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="container contact-section section-card">
+      <div class="contact-copy">
+        <span class="kicker">CONTACTO</span>
+        <h2>¿Trabajamos en algo increíble?</h2>
+        <p>Disponible para oportunidades relacionadas con automatización, software industrial, logística, procesos y transformación digital.</p>
+        <div class="contact-actions"><a class="btn btn-primary" href="https://wa.me/522217599518" target="_blank" rel="noopener">Envíame un mensaje</a><a class="btn btn-outline" href="Aaron_Reza_Ramirez_CV.pdf" download>Descargar CV</a></div>
+        <div class="contact-lines"><span>aaronrezaramirez2@gmail.com</span><span>+52 221 759 9518</span><span>Puebla, Pue.</span></div>
+      </div>
+      <div class="qr-card"><img src="assets/github-qr.png" alt="QR GitHub"><strong>GitHub</strong><span>github.com/aarom-code</span></div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
